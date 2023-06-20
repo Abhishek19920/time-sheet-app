@@ -1,0 +1,24 @@
+<div class="login-wrapper" fxLayoutAlign="center center">
+    <form class="formwidth" (ngSubmit)="onSubmit()" [formGroup]="loginForm">
+        <mat-card class="box">
+            <mat-card-header>
+                <mat-card-title class="text-center">Time sheet Management Application</mat-card-title>
+            </mat-card-header>
+            <form class="Login-form">
+                <mat-card-content>
+                    <mat-form-field>
+                        <input matInput placeholder="Username">
+                    </mat-form-field>
+                </mat-card-content>
+                <mat-card-content>
+                    <mat-form-field>
+                        <input matInput placeholder="Password">
+                    </mat-form-field>
+                </mat-card-content>
+                <button mat-flat-button color="primary" type="button" class="login-button">Sign in to account</button>
+            </form>
+            <button mat-flat-button type="button" class="login-button"><a routerLink="/sign-up">Register</a></button>
+
+        </mat-card>
+    </form>
+</div>
